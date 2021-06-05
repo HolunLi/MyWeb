@@ -1,0 +1,15 @@
+.t1{
+    width:168px;
+    height: 28px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding-left: 5px;
+}
+
+.t2{
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    color: black;
+    background-color:whitesmoke;
+}

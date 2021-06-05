@@ -91,7 +91,7 @@
     <form id="loginForm" action="welcome.jsp">
         <table>
             <tr>
-                <td>用户:<br><input type="text" name="uname" id="uname" /></td>
+                <td>用户名:<br><input type="text" name="uname" id="uname" /></td>
             </tr>
             <tr>
                 <td>密码:<br> <input type="password" name="upwd" id="upwd" /></td>

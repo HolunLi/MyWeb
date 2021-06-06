@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <default-config>
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/mydatabase</property>
+        <property name="user">root</property>
+        <property name="password">haolun</property>
+        <!--对应的是setCheckoutTimeout(毫秒)方法,如果10秒后还没拿到连接即超时,会抛出个异常-->
+        <property name="checkoutTimeout">10000</property>
+    </default-config>
+
+    <!--
+    1. <name-config>标签 默认继承<default-config>便签中定义的属性。
+    2. 如果<default-config>便签中有属性和<name-config>标签中的属性相同,则以<name-config>中的为准。
+       有点类似于java中子类继承父类,并重写父类的成员变量的意思
+    3. <name-config>可以配置多个,通过名字来区分。
+    4. <name-config>可以不配置,直接使用<default-config>
+    -->
+    <name-config name="holun">
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/mydatabase</property>
+        <property name="user">root</property>
+        <property name="password">haolun</property>
+        <!-- 因为<name-config>标签中没有自定义checkoutTimeout属性,
+         所以默认使用从<default-config>标签继承而来的checkoutTimeout属性 -->
+    </name-config>
+</c3p0-config>
+

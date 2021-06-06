@@ -9,7 +9,7 @@ public class DBUtil {
 
     //从数据库连接池中获取数据库连接(通用)
     public static void connectDatabase() throws SQLException {
-        connection = DataSourceUtil.getDataSourceByDbcpProperties().getConnection(); //从连接池中获取数据
+        connection = DataSourceUtil.getDataSourceByDbcpProperties().getConnection();
     }
 
     //关闭所有的资源(通用)

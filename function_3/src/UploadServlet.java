@@ -67,7 +67,7 @@ public class UploadServlet extends HttpServlet {
                         }
 
                         //指定用户上传的文件存放在哪个目录中。注:这个目录不要包含在tomcat服务器安装目录中
-                        File file = new File("D:/MyWeb/function_3/web/upload", itemName);
+                        File file = new File("G:/github_repository/MyWeb/function_3/web/upload", itemName);
                         item.write(file); //将用户上传的文件,通过输出流写入到指定的目录中存储
                         resp.getWriter().println(itemName + " 上传成功!");
                     }
